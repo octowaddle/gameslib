@@ -1,0 +1,10 @@
+@import url("config.css");
+
+input[type=text] {
+  background-color: var(--background3);
+  color: var(--foreground1);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-sizing: border-box;
+}

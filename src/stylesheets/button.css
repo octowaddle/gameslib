@@ -1,0 +1,39 @@
+@import url("config.css");
+
+button, input[type=button], input[type=submit] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: var(--background3);
+  border: none;
+  color: var(--foreground1);
+  transition: filter ease-in-out 0.2s;
+}
+
+header button {
+  height: 75%;
+  aspect-ratio: 1;
+}
+
+header button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+button:hover, input[type=button]:hover, input[type=submit]:hover {
+  filter: brightness(120%);
+}
+
+button > *, input[type=button] > *, input[type=submit] > * {
+  width: 65%;
+  height: 65%;
+  color: var(--foreground1);
+}
+
+input[type=submit] {
+  background-color: #15539e;
+}
+
+input[name=cancel] {
+  background-color: #b0161d;
+}

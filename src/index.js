@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./stylesheets/reset.css"
+import "./stylesheets/header.css"
+import "./stylesheets/typography.css"
+import "./stylesheets/modal.css"
+import "./stylesheets/input.css"
+import "./stylesheets/button.css"
+import "./stylesheets/entry.css"
+import "./stylesheets/context.css"
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

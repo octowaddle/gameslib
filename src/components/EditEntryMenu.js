@@ -25,47 +25,44 @@ const EditEntryMenu = ({ onEdit, onCancel, game }) => {
   };
 
   return (
-    <form className="add-entry" onSubmit={onSubmit}>
-      <div>
-        <label>Title</label>
+    <>
+      <div className="page-fade"></div>
+      <form className="entry-menu" onSubmit={onSubmit}>
         <input
           type="text"
           placeholder={game.title}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Platform</label>
         <input
           type="text"
           placeholder={game.platform}
           value={platform}
           onChange={(e) => setPlatform(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Year</label>
         <input
           type="text"
           placeholder={game.year}
           value={year}
           onChange={(e) => setYear(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Cover</label>
         <input
           type="text"
           placeholder={game.cover}
           value={cover}
           onChange={(e) => setCover(e.target.value)}
         />
-      </div>
-
-      <input type="submit" value="Save" />
-      <input type="button" name="cancel" value="Cancel" onClick={onCancel} />
-    </form>
+        <div className="horizontal">
+          <input
+            type="button"
+            name="cancel"
+            value="Cancel"
+            onClick={onCancel}
+          />
+          <input type="submit" value="Save" />
+        </div>
+      </form>
+    </>
   );
 };
 

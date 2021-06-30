@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Menu, Item, useContextMenu } from "react-contexify";
+import { Menu, Item, useContextMenu, theme, animation } from "react-contexify";
 import "react-contexify/dist/ReactContexify.css";
 
 const Entry = ({ game, onDelete, onShowEdit }) => {
@@ -32,7 +32,7 @@ const Entry = ({ game, onDelete, onShowEdit }) => {
         <p className="year">{game.year}</p>
         <p className="platform">{game.platform}</p>
       </li>
-      <Menu id="entry-context-menu">
+      <Menu id="entry-context-menu" theme={theme.dark} animation={animation.slide}>
         <Item onClick={handleEdit}>Edit</Item>
         <Item onClick={handleDelete}>Delete</Item>
       </Menu>

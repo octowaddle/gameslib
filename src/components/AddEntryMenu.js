@@ -24,47 +24,45 @@ const AddEntryMenu = ({ onAdd, onCancel }) => {
   };
 
   return (
-    <form className="add-entry" onSubmit={onSubmit}>
-      <div>
-        <label>Title</label>
+    <>
+      <div className="page-fade"></div>
+      <form className="entry-menu" onSubmit={onSubmit}>
         <input
           type="text"
-          placeholder="Overhyped Game"
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Platform</label>
         <input
           type="text"
-          placeholder="PC > Console"
+          placeholder="Platform"
           value={platform}
           onChange={(e) => setPlatform(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Year</label>
         <input
           type="text"
-          placeholder="2077"
+          placeholder="Year"
           value={year}
           onChange={(e) => setYear(e.target.value)}
         />
-      </div>
-      <div>
-        <label>Cover</label>
         <input
           type="text"
-          placeholder="https://path/to/cover.jpg"
+          placeholder="Cover"
           value={cover}
           onChange={(e) => setCover(e.target.value)}
         />
-      </div>
-
-      <input type="submit" value="Add to your library" />
-      <input type="button" name="cancel" value="Cancel" onClick={onCancel} />
-    </form>
+        <div className="horizontal">
+          <input
+            type="button"
+            name="cancel"
+            value="Cancel"
+            className="cancel"
+            onClick={onCancel}
+          />
+          <input type="submit" value="Add to your library" />
+        </div>
+      </form>
+    </>
   );
 };
 

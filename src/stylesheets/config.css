@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
+
+:root {
+    --header-bar-height: 3rem;
+    --entry-size: 15rem;
+    --foreground1: #eeeeec;
+    --background1: #282828;
+    --background2: #353535;
+    --background3: #3c3c3c;
+    --background4: #464645;
+    --border-radius: 0.5rem;
+    color: #fff;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--background2);
+}
